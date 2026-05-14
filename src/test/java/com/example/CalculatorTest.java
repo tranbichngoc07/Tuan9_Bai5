@@ -23,4 +23,10 @@ public class CalculatorTest {
             calculator.divide(10, 0);
         });
     }
+
+    @Test
+    void testGetStatus() {
+        assertEquals("Đạt", calculator.getStatus(60));
+        assertEquals("Trượt", calculator.getStatus(40));
+    }
 }
